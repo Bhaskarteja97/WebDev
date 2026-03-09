@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Mobiles</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:linear-gradient(90deg, mediumpurple, purple);
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+font-style:italic;
+}
+
+.menu{
+display:flex;
+gap:30px;
+font-weight:bold;
+}
+
+.menu div{
+cursor:pointer;
+}
+
+.icons{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icons span{
+font-size:20px;
+cursor:pointer;
+}
+
+input{
+padding:6px 10px;
+border-radius:20px;
+border:none;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+text-align:center;
+font-size:28px;
+font-weight:bold;
+margin:40px 0 20px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:0 40px 40px;
+}
+
+/* PRODUCT CARD */
+
+.card{
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+.card h3{
+font-size:18px;
+margin:10px 0;
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+}
+
+.off{
+color:green;
+font-weight:bold;
+}
+
+button{
+margin-top:10px;
+padding:8px 15px;
+border:none;
+border-radius:6px;
+background:mediumpurple;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:purple;
+}
+
+/* FOOTER */
+
+.footer{
+background:#222;
+color:white;
+padding:40px;
+margin-top:40px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.footer h3{
+margin-bottom:15px;
+}
+
+.footer p{
+color:#bbb;
+line-height:1.6;
+}
+
+.footer-links div{
+margin:6px 0;
+cursor:pointer;
+color:#bbb;
+}
+
+.footer-links div:hover{
+color:white;
+}
+
+.social-icons{
+margin-top:10px;
+display:flex;
+gap:15px;
+font-size:20px;
+}
+
+.social-icons span{
+cursor:pointer;
+color:#bbb;
+}
+
+.social-icons span:hover{
+color:white;
+}
+
+.footer-bottom{
+text-align:center;
+border-top:1px solid #444;
+margin-top:25px;
+padding-top:15px;
+color:#aaa;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">PREMIUM MOBILES</div>
+
+<div class="menu">
+<div>Home</div>
+<div>Products</div>
+<div>About</div>
+</div>
+
+<div class="icons">
+<input type="text" placeholder="Search">
+<span class="bi bi-search"></span>
+<span class="bi bi-cart"></span>
+</div>
+
+</nav>
+
+<!-- BESTSELLERS -->
+
+<div class="section-title">BESTSELLERS</div>
+
+<section class="grid">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Bn8sQI3xL._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone 17 Pro Max</h3>
+<div class="price">₹1,29,900</div>
+<div class="off">20% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Y8ZfpTmKL._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone Air</h3>
+<div class="price">₹89,900</div>
+<div class="off">15% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Fs5IMyy0L._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone 17e</h3>
+<div class="price">₹70,900</div>
+<div class="off">20% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/51v01ihBc8L._SX342_SY445_QL70_FMwebp_.jpg">
+<h3>Watch Ultra 3</h3>
+<div class="price">₹89,900</div>
+<div class="off">5% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<div class="section-title">PRODUCTS</div>
+
+<section class="grid">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/414vDlnDqjL._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Samsung Galaxy S26</h3>
+<div class="price">₹1,39,900</div>
+<div class="off">5% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31eU8QDv47L._SX300_SY300_QL70_FMwebp_.jpg">
+<h3>Samsung Galaxy S25</h3>
+<div class="price">₹1,29,900</div>
+<div class="off">15% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/41Jy7YK8V7L._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Oneplus 13s</h3>
+<div class="price">₹70,900</div>
+<div class="off">20% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/616kkUbRg4L._SX569_.jpg">
+<h3>Oneplus 15</h3>
+<div class="price">₹89,900</div>
+<div class="off">5% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Bn8sQI3xL._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone 17 Pro Max</h3>
+<div class="price">₹1,29,900</div>
+<div class="off">20% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Y8ZfpTmKL._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone Air</h3>
+<div class="price">₹89,900</div>
+<div class="off">15% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31Fs5IMyy0L._SY300_SX300_QL70_FMwebp_.jpg">
+<h3>Iphone 17e</h3>
+<div class="price">₹70,900</div>
+<div class="off">20% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/51v01ihBc8L._SX342_SY445_QL70_FMwebp_.jpg">
+<h3>Watch Ultra 3</h3>
+<div class="price">₹89,900</div>
+<div class="off">5% OFF</div>
+<button>Add to Cart</button>
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- Brand -->
+<div>
+<h3>Premium Mobiles</h3>
+<p>Your trusted destination for the latest smartphones and accessories. 
+Find the best deals on premium devices.</p>
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+<h3>Quick Links</h3>
+<div>Home</div>
+<div>Products</div>
+<div>Best Sellers</div>
+<div>Contact</div>
+</div>
+
+<!-- Customer Service -->
+<div class="footer-links">
+<h3>Customer Service</h3>
+<div>Help Center</div>
+<div>Shipping</div>
+<div>Returns</div>
+<div>Order Tracking</div>
+</div>
+
+<!-- Social -->
+<div>
+<h3>Follow Us</h3>
+<div class="social-icons">
+<span class="bi bi-facebook"></span>
+<span class="bi bi-instagram"></span>
+<span class="bi bi-twitter-x"></span>
+<span class="bi bi-youtube"></span>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Premium Mobiles. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
